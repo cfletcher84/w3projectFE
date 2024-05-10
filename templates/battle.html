@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../static/main.css">
+<script src="../static/main.js" defer></script>
+<title>PokeAPI Integration Project</title>
+</head>
+<body style="background-color: rgb(2, 62, 226);">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+          <img class="img" style="height: 50px" src="../static/images/pokemon.jpg" alt="logo">
+          <a class="navbar-brand">Pokémon World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 link-light">
+                <li class="nav-item">
+                    <a class="nav-link active link-light text-black" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light text-black" href="./team.html">Build A Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light text-black" href="./battle.html">Battle Simulator</a>
+                </li>
+            </ul>
+        </nav>
+      </header>
+      <div class="text-center" id="battleSimulator">
+        <h2>Pokémon Battle Simulator</h2>
+        <div class="mt-5" id="battle">
+            <h3>Select Pokémon for Battle</h3>
+            <div id="pokemonSelection">
+                <select id="pokemon1">
+                    <option value="">Select Pokémon 1</option>
+                </select>
+                <select id="pokemon2">
+                    <option value="">Select Pokémon 2</option>
+                </select>
+            </div>
+            <button onclick="startBattle()">Start Battle</button>
+        </div>
+        <div class="mt-5" id="battleResults">
+            <h3>Battle Results</h3>
+            <div id="battleLog"></div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="footer">
+            <p>&copy; Savvy & Chris PokeAPI</p>
+        </div>
+      </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

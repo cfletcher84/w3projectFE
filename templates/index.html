@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../static/main.css">
+<title>PokeAPI Integration Project</title>
+</head>
+<body style="background-color: rgb(2, 62, 226);">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <img class="img" style="height: 50px" src="../static/images/pokemon.jpg" alt="logo">
+      <a class="navbar-brand">Pokémon World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0 link-light">
+            <li class="nav-item">
+                <a class="nav-link active link-light text-black" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light text-black" href="./team.html">Build A Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light text-black" href="./battle.html">Battle Simulator</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <section class="jumbotron-header text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Welcome to Pokémon World</h1>
+        <p class="little-heading">Start your Pokémon adventure here!</p>
+        <a href="./search.html" class="btn btn-primary my-2">Explore Pokémon</a>
+      </div>
+    </section>
+  </main>
+    <div class="d-flex justify-content-center mt-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel" style="max-width: 400px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../static/images/pikachu.jpg" class="d-block w-100" style="height: 300px;" alt="pikachu">
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/pokemon friends.png" class="d-block w-100" style="height: 200px;" alt="pokemon friends">
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/pokeball.png" class="d-block w-100" style="height: 200px;" alt="pokeball">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <p class="text-center">Pokémon are creatures of various shapes and sizes with incredible powers and abilities. Assemble your dream team of Pokémon to compete in battles, embark on adventures, and conquer the Pokémon world! Choose wisely, train diligently, and become a Pokémon Master!</p>
+    </div>
+  <footer class="text-center">
+    <div class="footer">
+        <p>&copy; Savvy & Chris PokeAPI</p>
+    </div>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
